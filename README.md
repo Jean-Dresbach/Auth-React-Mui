@@ -22,3 +22,13 @@ Run the project:
 yarn dev
 ```
 
+## 🛠️ Built with
+
+![Static Badge](https://img.shields.io/badge/React-%2359c9f1?style=for-the-badge&logo=REACT&labelColor=black)
+![Static Badge](https://img.shields.io/badge/Material--UI-blue?style=for-the-badge&logo=MUI&labelColor=black)
+![Static Badge](https://img.shields.io/badge/Redux-%23764ABC?style=for-the-badge&logo=Redux&labelColor=black)
+![Static Badge](https://img.shields.io/badge/Vite-orange?style=for-the-badge&logo=Vite&labelColor=black)
+
+
+
+
