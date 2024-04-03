@@ -1,21 +1,14 @@
-import { useState } from "react"
-import { ThemeProvider, createTheme } from "@mui/material"
+import { Provider as ReduxProvider } from "react-redux"
+import { PersistGate } from "redux-persist/integration/react"
 
-import { RouterProvider } from "react-router-dom"
-import { router } from "./Routes/Router"
+import { Root } from "./Root"
+import { persitedStore, store } from "./redux"
 
 export function App() {
-  const [themeState, setThemeState] = useState<"light" | "dark">("light")
-
-  const theme = createTheme({
-    palette: {
-      mode: themeState
-    }
-  })
-
   return (
-    <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <ReduxProvider store={store}>
+      <PersistGate loading={null} persistor={persitedStore} />
+      <Root />
+    </ReduxProvider>
   )
 }
